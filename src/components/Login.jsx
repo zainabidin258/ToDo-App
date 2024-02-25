@@ -24,12 +24,13 @@ const Login = ({ setUser }) => {
     return (
         <>
             <div>
-                <h1 style={{ textAlign: "center", color: "#222222" }}>
+                <h1 style={{ textAlign: "center", color: 'teal-600', fontWeight:'bold', paddingTop : "5px", paddingBottom : "5px" , fontSize: '30px' }}>
                     Login
                 </h1>
             </div>
-            <div className="container " style={{
-                width: '100%',
+            <div className="container bg-gray-800" style={{
+                // width: '100%',
+                // height: '100vh',
                 maxWidth: '500px',
                 margin: '0 auto',
                 display: 'flex',
@@ -73,7 +74,7 @@ const Login = ({ setUser }) => {
                         }}
                     />
 
-                    <button type="button" onClick={handleSubmit}>Login</button>
+                    <button className="border-2 bg-teal-600 font-semibold text-white border-slate-300 p-2 rounded-md" type="button" onClick={handleSubmit}>Login</button>
                 </form>
             </div>
         </>
